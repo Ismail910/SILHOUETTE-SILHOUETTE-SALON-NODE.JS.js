@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Booking Appointment</title>
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <link rel="stylesheet" type="text/css" href="StyleIndex.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </head>
+    
+    <body>
+        <header>
+            <!--LOGO-->
+            <img src="IMGs/Silhouette_Beauty_Salon_Logo.png" class="logo" width = "200" height = "150"
+                    alt="Beauty Salon Logo Image">
+                    <nav>
+                        <ul>
+                            <li><a href="Main.htm"> Welcome</a></li>
+                            <li><a href="About-us.html"> About Us</a></li>
+                            <li><a href="CustomerInformation.html"> Contact Us</a></li>
+                            <li><a href="HomePage.html"> Home Page</a></li>
+                        </ul>
+                    </nav>
+        </header>
+
+        <!--Image Divider--><div class="image_div_top"></div>
+
+        <section id="checkoutSection" class="content padding">
+            <div class="contactBox">
+                <div class="grid col-2" id="cart-grid"><!--CONTAINER (GRID) OF CALENDAR AND CART-->
+                    <!--DATE TIME AND SERVICES-->
+                    <div class="calendar">
+                        <h2>Select service, date, and time</h2>
+                        <form id="appointment-form"> 
+                            <label for="facility">Select a service:</label> 
+                            <select id="facility">
+                                <option value="haircut1">Hair Trim - 50 SAR</option> 
+                                <option value="haircut2">Hair Trim & Blowdry - 80 SAR</option>
+                                <option value="haircut3">Hair Wash & Dry - 50 SAR</option>
+                                <option value="haircut4">Hair Style - 100 SAR</option> 
+                                <option value="haircut5">Hair Style (Bridal) - 180 SAR</option>
+                                
+                                <option value="lashes1">Lash Lift - 150 SAR</option>
+                                <option value="lashes2">Lash Extensions - 280 SAR</option> 
+                                <option value="brows1">Brow Tint & Lamination - 150 SAR</option>
+                                <option value="brows2">Brow Microblading - 150 SAR</option>
+                                <option value="brows3">Brow Threading - 50 SAR</option> 
+                                <option value="brows4">Brow Waxing - 50 SAR</option>
+
+                                <option value="manicure">Manicure - 90 SAR</option>
+                                <option value="pedicure">Pedicure - 100 SAR</option>
+                                <option value="mani&pedi">Mani & Pedi - 150 SAR</option>
+                                <option value="skincare">Hydro Facial - 280 SAR</option>
+                            </select><br>
+                            
+                            <label for="month">Select a month:</label>
+                            <select id="month"> 
+                                <option value="january">January</option>
+                                <option value="february">February</option>
+                                <option value="march">March</option>
+                                <option value="april">April</option>
+                                <option value="may">May</option>
+                                <option value="june">June</option>
+                                <option value="july">July</option>
+                                <option value="august">August</option>
+                                <option value="september">September</option>
+                                <option value="october">October</option>
+                                <option value="november">November</option>
+                                <option value="december">December</option>
+                            </select><br> 
+                
+                            <label for="date">Select a date:</label>
+                            <input type="date" id="date"><br>
+                            
+                            <label for="time">Select a time:</label>
+                            <select id="time">
+                                <option value="9:00 AM">9:00 AM</option>
+                                <option value="10:00 AM">10:00 AM</option>
+                                <!--  more time slots -->
+                            </select>
+
+                            <div class="space-30"></div>
+
+                            <button type="button" id="add-to-cart">Add to Cart</button>
+                        </form>
+                    </div>
+                    
+                    <!--Shopping Cart-->
+                    <div class="checkout space-100">
+                        <h2>Booking Cart</h2>
+                        <ul id="cart"> 
+                            <!-- CART ITEMS DISPLAYED HERE --> 
+                        </ul>
+                        <p>Total Price: <span id="total-price">$0</span></p> 
+                        
+                        <div class="space-30"></div>
+                        <button type="button" id="payment">Proceed to Payment  <i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div> 
+                    
+                </div>
+            </div>
+        </section>
+
+    <footer>
+        <div class="grid col-4">
+            <div class="grid col-1">
+                <h3>Silhouette Salon <br><br><span class="text-left">&copy; beauty salon 2023</span></h3>
+            </div>
+  
+            <div><!--address-->
+                <h4>Address & Contact Info</h4>
+                <span>Industrial Area No. 2. <br>Riyadh, Saudi Arabia, 7107</span><br>
+                <span><a href= "tel:00966-1-2820484">  +966 1 2820484</a></span>
+                <span><a href="mailto:beautysalon@site.com">beautysalon@site.com</a></span>
+            </div>
+  
+            <div><!--opening hrs-->
+                <h4>Opening Hours</h4>
+                <span>Sun - Thu<br>9am - 10pm</span><br>
+                <span>Fri - Sat<br>11am - 11pm</span>
+            </div>
+  
+            <div><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d120575.18046635174!2d46.614067944244105!3d24.710388686748264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ssa!4v1699385372479!5m2!1sen!2ssa" 
+                width="270" height="270" style="border: 4px solid rgb(228, 219, 219);  
+                width: 270px; height: 450px;" allowfullscreen="" loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </div>
+    </footer>
+    </body>
+</html>

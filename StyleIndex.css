@@ -1,0 +1,866 @@
+/*Fonts*/
+@font-face {
+    font-family: myFont3-grotesque;
+    src: url(MYFONTS/webfont/DarkerGrotesque-Medium.woff);
+  }
+
+  @font-face {
+    font-family: myFont3-SafiraMarch;
+    src: url(MYFONTS/Safira\ March.otf);
+  }
+
+  /*General classes*/
+.padding{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.LR_padding{
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.TB_padding{
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+
+.space-30 {
+    height: 30px;
+  }
+
+.space-100{
+  height: 100px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left{
+text-align: left;
+}
+
+.image_div{
+  background-color: cornsilk;
+  background-image:url(IMGs/imgdiv.png) ;
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+  height: 400px;
+}
+
+.image_div_top{
+  background-color: cornsilk;
+  background-image:url(IMGs/imgDiv1.png) ;
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+  height: 400px;
+}
+
+/*Setting that apply to elements*/
+body {
+    font-family: myFont3-grotesque;
+    color: rgb(33, 33, 33);
+    font-size: 20px;
+}
+
+h1, h3{
+  text-transform: uppercase;
+  font-size: 35px;
+  letter-spacing: 1.5px;
+}
+
+a{
+  text-decoration: none;
+  color: #211f1f;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+/*Setting that apply to elements*/
+
+.content{ /*Container*/
+    margin: 0 auto;
+    border-style: hidden;
+    max-width: 100%;
+}
+
+/*Grid*/
+.grid{
+    display: grid;
+    grid-gap: 1px;
+  }
+
+.col-3{
+    grid-template-columns: auto auto auto;
+}
+
+.col-1{
+  grid-template-columns: auto;
+}
+
+.col-2{
+    grid-template-columns: auto auto;
+}
+
+.col-4{
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+/*Grid*/
+
+/*Services-related styles*/
+#services.content{
+    background-color: #211f1f /*#25230f*/;
+    color: #f6ebeb;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+#services .grid.col-3 {
+    grid-gap: 20px;
+}
+
+#services li, #services a{
+  font-weight: bolder;
+}
+
+#services a:hover{
+  color: #367e72;
+}
+
+#services h4{
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: auto auto;
+}
+
+.squareImg{
+  width: 290px;
+  height: 250px;
+  margin: 0 auto;
+  background-size: contain;
+}
+
+.button{ /*button in all services page*/
+    padding: 10px 20px;
+    font-size: 15px;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    border: 2px solid #f6ebeb;
+    color: #f6ebeb;
+    font-weight: bold;
+  }
+
+  /*CHECKOUT PAGE*/
+  .contactBox{
+    max-width: 600px;
+    background-color: #dd96cb8e;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.contactBox span{
+  margin: 5px auto;
+  display: block;
+  font-size: 20px;
+}
+
+#checkoutSection label, .checkout>p{
+  font-size: 20px;
+  display: block;
+  margin-bottom: 3px;
+}
+
+#month, #facility, #time, #date{
+  border: 1px solid rgba(63, 63, 63, 0.278);
+  background: transparent;
+  padding:7px;
+}
+
+.calendar{/*container in which the user chooses service, date, time*/
+  margin: auto auto auto auto;
+}
+
+#checkout.content{
+    border: hidden;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#checkout.content::before{
+    content: "";
+    display: block;
+    position: absolute;
+    margin-bottom: -20px;
+    margin-left: -25px;
+    border: 2px solid rgb(47, 31, 16);
+    border-spacing: 3px;
+    width: 990px;
+    height: 610px;
+  }
+  
+#checkout h3{
+    text-transform: capitalize;
+    font-size: 35px;
+    letter-spacing: 1.5px;
+}
+
+#add-to-cart, #payment{ /*buttons*/
+    background: transparent;
+    color: #367e72;
+    font-family: myFont3-grotesque;
+    font-size: 20px;
+    font-weight: bolder;
+    border-style: none;
+}
+
+/*Hair-Lash-Spa Menu (SPECIFIED) settings*/
+.menu li, .menu a{
+  display: inline-block;
+  color:rgb(248, 235, 235);
+  list-style-type: none;
+  font-size: 23px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  margin: auto 15px;
+}
+
+
+.unbordered_button{
+  padding: 10px 20px;
+  font-size: 15px;
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
+  color: #f6ebeb;
+  font-weight: bold;
+}
+
+
+  /*Fey's Page*/
+  #welcomeTitle.content{
+    background-image:url(IMGs/mainpage1.png);
+    background-size: cover;
+  }
+
+  .text-content{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: right;
+    padding-left: 500px;
+    overflow-wrap: break-word;
+  }
+  
+  footer {
+  background-color: #f6f5f3;
+  color: #25230f;
+  padding: 30px;
+  text-align: center;
+}
+
+footer h3{
+  font-family: myFont3-SafiraMarch;
+  font-size: 23px;
+  text-align: left;
+}
+
+h3>span{
+  font-family: myFont3-grotesque;
+}
+
+footer h4{
+  text-transform: uppercase;
+  font-size: 25px;
+  letter-spacing: 1px;
+  margin-bottom: 13px;
+}
+
+footer span{
+  margin: 5px auto;
+  display: block;
+  font-size: 20px;
+}
+
+
+/*SLIDESHOW*/
+#slidesShow.content{
+ background-color: #211f1f;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ height: 600px;
+ padding: 10px auto;
+}
+
+#slidesShow.content > div {
+  margin: 25px;
+  font-family: myFont3-SafiraMarch;
+  font-size: 21px;
+  text-align: left;
+  letter-spacing: 2px;
+}
+
+.slidesShow_container{
+  position: relative;
+  max-width: 800px;
+}
+
+.imgSlides{
+  display: none;
+}
+
+.imgSlides img {
+  width: 100%;
+  height: 450px; 
+} 
+
+#slidesShow h3{
+  color: aliceblue;
+}
+.prev, .next { 
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer; 
+} 
+
+.prev {
+  left: 0; 
+} 
+
+.next {
+  right: 0; 
+} 
+
+/*Rahaf*/
+header {
+  background-color: #f6f5f3;
+  padding: 15px;
+  font-size: 21px;
+  letter-spacing: 1.5px;
+}
+
+.logo
+{
+  width: 250px;
+  height: 180px;
+  margin-left: 545px;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color:#25230f;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+nav a:hover {
+  color: #367e72;
+  text-decoration: underline;
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: #25230f;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+ th,td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #dd96cb;
+  color: #25230f;
+}
+
+#aboutUs{  
+  margin: 20px;
+}
+
+/*Shahad*/
+main {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+main h2 {
+  margin-top: 0;
+}
+
+form label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+  background-color:#dd96cb;
+}
+
+/*Media Queries*/
+@media (max-width: 576px){
+  html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .logo{
+    width: 150px;
+    height: 120px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  nav ul {
+   margin-left: -15px;
+  }
+  #slidesShow.content{
+    padding-top: 30px;
+    display: block;
+    height: 110%;
+  }
+  .imgSlides img{
+    height: 340px;
+  }
+  #slidesShow h3{
+    font-size: 26px;
+    padding: auto 10px;
+  }
+  h1 {
+    margin-top: -50px;
+    color: #367e72;
+    text-align: center;
+  }
+  footer>div:first-child{
+    display: grid;
+    grid-template-columns: auto;
+  }
+  footer h3{
+    font-size: 20px;
+    text-align: center;
+  }
+  footer h4{
+    font-size: 23px;
+    text-align: center;
+  }
+  footer span{
+    font-size: 17px;
+  }
+  footer h3>span{
+    display: none;
+  }
+  #welcomeTitle.content{
+    background-image: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .text-content{
+    text-align: center;
+    overflow-wrap: break-word;
+    padding-right: 15px;
+    padding-left: 15px;
+    max-height: 150px;
+  }
+  .text-content h3{
+    font-size: 20px;
+  }
+  .text-content p{
+    font-size: 17px;
+  }
+  .image_div_top{
+    height: 100px;
+  }
+  main{
+    margin: 17px 23px;
+    padding: 10px 20px;
+  }
+  #service-grid{
+    display: block;
+  }
+  .image_div{
+    height: 120px;
+    display: inline-block;
+  }
+  #services.content.LR_padding{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .menu{
+    padding: 0;
+  }
+  .menu li, .menu a{
+    letter-spacing: 1px;
+    margin: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #hairServices, #LBservices, #nailServices{/**/
+    display: block;
+  }
+  #hairServices> div.text-center, #LBservices>div.text-center, #nailServices>div.text-center{/**/
+  padding: 15px;
+  }
+  #cart-grid{
+    display: block;
+    overflow-wrap: break-word;
+    height: 700px;
+  }
+}
+
+@media (min-width: 577px) and (max-width:768px){
+  html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .logo{
+    width: 200px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #slidesShow.content{
+    padding-top: 30px;
+    display: block;
+    height: 120%;
+  }
+  .imgSlides img{
+    height: 340px;
+  }
+  #slidesShow h3{
+    font-size: 35px;
+    padding: auto 15px;
+  }
+  h1 {
+    margin-top: -50px;
+    color: #367e72;
+    text-align: center;
+  }
+  footer>div:first-child{
+    display: grid;
+    grid-template-columns: auto;
+  }
+  footer h3{
+    font-size: 20px;
+    text-align: center;
+  }
+  footer h4{
+    font-size: 20px;
+    text-align: center;
+  }
+  footer h3>span{
+    display: none;
+  }
+  .text-content{
+    text-align: right;
+    padding-top: 80px;
+    padding-left: 160px;
+    overflow-wrap: break-word;
+  }
+  .text-content h3{
+    font-size: 25px;
+    color: rgb(159, 147, 132);
+    font-weight: bolder;
+  }
+  .text-content p{
+    font-size: 17px;
+    color: antiquewhite;
+  }
+  .image_div_top{
+    height: 200px;
+  }
+  main{
+    margin: 20px 25px;
+    padding: 10px 20px;
+  }
+  #services.content{
+    padding-top: 35px;
+  }
+  #services h3{
+    letter-spacing: 2px;
+  }
+  #service-grid{
+    display: block;
+  }
+  .image_div{
+    height: 250px;
+  }
+  #services.content.LR_padding{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .menu{
+    padding: 0;
+  }
+  .menu li, .menu a{
+    letter-spacing: 1px;
+    margin: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #hairServices, #LBservices, #nailServices{/**/
+    display: block;
+  }
+  #hairServices> div.text-center, #LBservices>div.text-center, #nailServices>div.text-center{/**/
+  padding: 25px;
+  }
+  
+  #cart-grid{
+    display: block;
+    overflow-wrap: break-word;
+    height: 700px;
+  }
+}
+
+@media (min-width: 769px) and (max-width:992px){
+  html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .logo{
+    width: 200px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #slidesShow.content{
+    display: block;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: auto;
+    height: 120%;
+  }
+  .imgSlides img{
+    width: 100%;
+    height: 450px;
+  }
+  #slidesShow h3{
+    font-size: 35px;
+    padding: auto 15px;
+  }
+  h1 {
+    margin-top: -50px;
+    color: #367e72;
+    text-align: center;
+  }
+  footer>div:first-child{
+    display: grid;
+    grid-template-columns: auto;
+  }
+  footer h3{
+    font-size: 20px;
+    text-align: center;
+  }
+  footer h4{
+    font-size: 20px;
+    text-align: center;
+  }
+  footer h3>span{
+    display: none;
+  }
+  .text-content{
+    text-align: right;
+    padding-top: 80px;
+    padding-left: 160px;
+    overflow-wrap: break-word;
+  }
+  .text-content h3{
+    font-size: 25px;
+    font-weight: bolder;
+  }
+  .text-content p{
+    font-size: 21px;
+    color: antiquewhite;
+  }
+  .image_div_top{
+    height: 230px;
+  }
+  main{
+    margin: 20px auto;
+    padding: 10px 20px;
+  }
+  #services.content{
+    padding-top: 35px;
+  }
+  #services h3{
+    letter-spacing: 2px;
+  }
+  #service-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .image_div{
+    height: 250px;
+  }
+  #services.content.LR_padding{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .menu{
+    padding: 0;
+  }
+  .menu li, .menu a{
+    letter-spacing: 1px;
+    margin: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  div.calendar{
+    margin-right: 50px;
+  }
+}
+@media (min-width: 992px) and (max-width:1439px){
+  html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .logo{
+    width: 220px;
+    height: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #slidesShow.content{
+    display: block;
+    padding-top: 30px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: auto;
+    height: 95%;
+  }
+  .imgSlides img{
+    width: 100%;
+    height: 450px;
+  }
+  #slidesShow h3{
+    font-size: 40px;
+    padding: auto 15px;
+  }
+  h1 {
+    margin-top: -50px;
+    color: #367e72;
+    text-align: center;
+  }
+  footer{
+    padding: 40px;
+  }
+  footer h4{
+    font-size: 20px;
+    overflow-wrap:break-word;
+  }
+  footer h3>span{
+    display: none;
+  }
+  .text-content{
+    text-align: right;
+    padding-top: 80px;
+    padding-left: 160px;
+    overflow-wrap: break-word;
+  }
+  .text-content h3{
+    font-size: 25px;
+    font-weight: bolder;
+  }
+  .text-content p{
+    font-size: 21px;
+    color: antiquewhite;
+  }
+  .image_div_top{
+    height: 230px;
+  }
+  main{
+    margin: 20px auto;
+    padding: 10px 20px;
+  }
+  #services.content{
+    padding-top: 35px;
+  }
+  #services h3{
+    letter-spacing: 2px;
+  }
+  .image_div{
+    height: 250px;
+  }
+  #services.content.LR_padding{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .menu{
+    padding: 0;
+  }
+  .menu li, .menu a{
+    letter-spacing: 1px;
+    margin: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  div.calendar{
+    margin-right: 50px;
+  }
+}
